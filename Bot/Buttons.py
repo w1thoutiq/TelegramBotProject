@@ -11,4 +11,4 @@ def main_reply_keyboard() -> ReplyKeyboardMarkup:
         [KeyboardButton(text='text')],
         [KeyboardButton(text='text')]
     ]
-    return ReplyKeyboardMarkup(keyboard=buttons)  # Создание разметки под местом ввода
+    return ReplyKeyboardMarkup(keyboard=buttons)  # Обычные кнопки

@@ -1,7 +1,5 @@
 import sqlite3
 
-"""Здесь я надеюсь все ясно"""
-
 con = sqlite3.connect('TelegramBase.db')
 cur = con.cursor()
 
