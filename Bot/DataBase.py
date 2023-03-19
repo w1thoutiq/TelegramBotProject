@@ -8,4 +8,11 @@ cur.execute('''CREATE TABLE IF NOT EXISTS telegram (
     user_id BIGINT UNIQUE NOT NULL,
     username text);''')
 
+
+def input_on_bd(user_id, username):
+    cur.execute(f"INSERT INTO telegram (user_id, username) VALUES"
+                f"('{user_id}', '{username}')")
+    con.commit()
+
+
 con.commit()
